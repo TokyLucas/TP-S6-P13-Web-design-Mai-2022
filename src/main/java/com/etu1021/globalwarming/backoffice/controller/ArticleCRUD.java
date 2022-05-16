@@ -1,6 +1,7 @@
 package com.etu1021.globalwarming.backoffice.controller;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
@@ -40,7 +41,9 @@ public class ArticleCRUD {
 	
 	@GetMapping(path = "/bo/article")
 	public String form(@PathVariable(required = false) String id, HttpServletRequest request) throws Exception {
+		HttpSession session = request.getSession();
 		try {
+			if(session.getAttribute("admin") == null) return "redirect:/admin/login"; 
 			String url = envs.getBaseUrl() + "/api/categorie";
 			RestTemplate restTemplate = new RestTemplate();
 			JsonNode data = restTemplate.getForObject(url, JsonNode.class);

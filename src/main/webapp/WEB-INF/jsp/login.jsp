@@ -99,62 +99,30 @@
 
 <!--                             </form> -->
 
-                            <div class="woocommerce-info">Create a new article</div>
-                            
-                            <% if(admin != null) { %>
+                            <div class="woocommerce-info">Se connecter en tant qu' administrateur.</div>
+
+							<% if(admin != null) { %>
                             	<div class="woocommerce-info">Connection en cours: <%= admin.getEmail() %></div>
                             	<a href="/admin/logout">Se deconnecter</a>
                             <% } %>
 
-                            <form name="creer" method="post" class="checkout woocommerce-checkout" action="/bo/create_article" enctype="multipart/form-data">
+                            <form name="creer" method="post" class="checkout woocommerce-checkout" action="/admin/auth" >
 
                                 <div class="col2-set" id="customer_details">
                                     <div class="col-1">
                                         <div class="woocommerce-billing-fields">
 
-                                            <h3>Article</h3>
+                                            <h3>Se connecter.</h3>
                                             <div class="clear"></div>
 
-                                            <p class="form-row form-row form-row-wide" id="Titre">
-                                                <label for="billing_company" class="">Titre</label>
-                                                <input type="text" class="input-text " name="titre" id="Titre" placeholder="" autocomplete="organization" value="" />
-                                            </p>
-
-                                            <p class="form-row form-row form-row-wide address-field update_totals_on_change validate-required" id="billing_country_field">
-                                                <label for="billing_country" class="">Categorie <abbr class="required" title="required">*</abbr></label>
-                                                <select name="idcategorie" id="Categorie" autocomplete="country" class="country_to_state country_select ">
-							                        	<%
-													        if (categorie != null) {
-																for (int row = 0; row < categorie.size(); row++) {
-														%>
-                                                    		<option value="<%= categorie.get(row).get("id").asText() %>"><%= categorie.get(row).get("nom").asText() %></option>
-                                                    	<% }} %>
-                                                     
-                                                </select>
-                                                <noscript>
-                                                    <input type="submit" name="woocommerce_checkout_update_totals" value="Update country" />
-                                                </noscript>
-                                            </p>
-											
-											<p class="form-row form-row form-row-wide" id="Description">
-                                                <label for="billing_company" class="">Description</label>
-                                                <textarea  class="input-text " name="description" id="Description">
-                                            	</textarea>
-                                            </p>
-											
-                                            <div class="clear"></div>
-
-                                            <p class="form-row form-row form-row-wide" id="Contenus">
-                                                <label for="billing_company" class="">Contenus</label>
-                                                <textarea class="input-text " name="contenus" id="Contenus">
-                                            	</textarea>
+                                            <p class="form-row form-row form-row-wide" id="Email">
+                                                <label for="billing_company" class="">Email</label>
+                                                <input type="email" class="input-text " name="Email" id="Email" placeholder="" autocomplete="organization" value="" />
                                             </p>
                                             
-                                            
-                                            <p class="form-row form-row form-row-wide" id="images_thmb">
-                                                <label for="billing_company" class="">Thumbnail</label>
-                                                <input type="file" class="input-text " name="images_thmb" id="images_thmb" accept="image/x-png,image/gif,image/jpeg">
-                                            	
+											<p class="form-row form-row form-row-wide" id="mdp">
+                                                <label for="billing_company" class="">Mot de passe</label>
+                                                <input type="password" class="input-text " name="mdp" id="mdp" placeholder="" autocomplete="organization" value="" />
                                             </p>
                                             
                                             <p class="form-row form-row form-row-wide" id="billing_company_field">

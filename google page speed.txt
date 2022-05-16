@@ -1,0 +1,31 @@
+https://rechauffement-climatique-1021.herokuapp.com/home
+
+Sans optimisation
+
+    Mobile: 42 Performance
+        First Contentful Paint
+        5.9 s
+        Time to Interactive
+        8.8 s
+        Speed Index
+        6.7 s
+        Total Blocking Time
+        40 ms
+        Largest Contentful Paint
+        8.8 s
+        Cumulative Layout Shift
+        0.365
+    
+    Desktop: 79 Performance        
+        First Contentful Paint
+        1.9 s
+        Time to Interactive
+        1.9 s
+        Speed Index
+        1.9 s
+        Total Blocking Time
+        0 ms
+        Largest Contentful Paint
+        1.9 s
+        Cumulative Layout Shift
+        0.101
