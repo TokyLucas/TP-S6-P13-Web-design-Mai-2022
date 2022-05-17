@@ -29,3 +29,33 @@ Sans optimisation
         1.9 s
         Cumulative Layout Shift
         0.101
+
+Avec optimisation
+
+    Mobile: 69 Performance
+        First Contentful Paint
+        4.0 s
+        Time to Interactive
+        4.6 s
+        Speed Index
+        4.8 s
+        Total Blocking Time
+        30 ms
+        Largest Contentful Paint
+        4.9 s
+        Cumulative Layout Shift
+        0.003
+
+    Desktop: 89 Performance
+        First Contentful Paint
+        1.4 s
+        Time to Interactive
+        1.4 s
+        Speed Index
+        1.6 s
+        Total Blocking Time
+        10 ms
+        Largest Contentful Paint
+        1.4 s
+        Cumulative Layout Shift
+        0.098

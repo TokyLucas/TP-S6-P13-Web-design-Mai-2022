@@ -13,7 +13,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="irstheme">
-
+	
+	<meta 
+		name="Description" 
+		content = "	Le réchauffement climatique est le réchauffement à long terme de la température globale de la planète. 
+		                    	Bien que cette tendance au réchauffement se poursuive depuis longtemps, son rythme s'est considérablement accéléré au cours des cent dernières années en raison de la combustion de combustibles fossiles. 
+		                    	L'augmentation de la population humaine s'est accompagnée d'une augmentation du volume de combustibles fossiles brûlés. Les combustibles fossiles comprennent le charbon, le pétrole et le gaz naturel, et leur combustion provoque ce que l'on appelle l'effet de serre dans l'atmosphère terrestre. "
+	>
+	<meta name="keywords" content="1021, rechauffement climatique, rechaffaument, climatique, causes, conséquences, changement climatique, effet de serre">
+	
     <title> AAnglo - Rechauffement climatique </title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
 
@@ -116,7 +124,7 @@
                         <div class="slide-inner slide-bg-image" data-background="/assets/images/gw/gw.jpg" data-text="<div><button>Women</button><h4>Nether then turned around out the elements Nuala haverle</h4><ul><li>5 Mins Read</li><li>24 Apr 2022</li></ul></div>">
                             <div class="container-full">
                                 <div data-swiper-parallax="400" class="slide-title">
-                                    <h1 style="color: white!important">Decouvrer les causes et conséquences du rechauffement climatique.</h1>
+                                    <h1 style="color: white!important">Rechauffement climatique</h1>
                                     <h2>Changeons le monde </h2>
                                 </div>
                                 <div class="clearfix"></div>
@@ -220,7 +228,7 @@
                                     <button><%= articles.get(row).get("categorie").asText() %></button>
                                 </div>
                                 <div class="entry-details">
-                                    <h4><a href="articles/<%= articles.get(row).get("url").asText() %>"><%= articles.get(row).get("titre").asText() %></a></h4>
+                                    <h3><a href="articles/<%= articles.get(row).get("url").asText() %>"><%= articles.get(row).get("titre").asText() %></a></h3>
                                     <ul>
                                         <li><a href="#">3 Mins Read</a></li>
                                         <li><a href="#"><%= formattedDate %></a></li>
